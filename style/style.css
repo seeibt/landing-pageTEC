@@ -1,0 +1,315 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Open Sans";
+}
+
+html, body{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.center{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header{
+    width: 100%;
+    padding: 0 2%;
+    height: 60px;
+    background: linear-gradient(130deg, #06283D, #064a77);
+}
+
+.header img{
+    margin: 11px;
+}
+
+.container-banner{
+    width: 100%;
+    padding: 0 5%;
+    height: 557px;
+    background-image: url("../images/header_bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.container-banner > .center{
+    height: 100%;
+}
+
+.form{
+    padding: 15px;
+    width: 400px;
+    height: calc(100% + 30px);
+    float: right;
+    position: relative;
+    top: -5px;
+    background-color: #064a77;
+    border: 8px solid rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form h2{
+    font-weight: normal;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.form h3{
+    font-weight: normal;
+    color: white;
+    margin-top: 25px;
+    font-size: 12.5px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.input-container{
+    margin-top: 20px;
+}
+
+.input-container span, form p{
+    color: white;
+}
+
+.input-container input{
+    display: inline-block;
+    width: 100%;
+    color: black;
+    font-size: 17px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+form p{
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+input[type=submit]{
+    width: 280px;
+    height: 56px; 
+    border: 0;
+    background: white;
+    font-size: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+form .input-submit-container{
+    text-align: center;
+    margin-top: 45px;
+    cursor: pointer;
+}
+
+.form input[type=submit]:hover{
+    transition-duration: 0.5s;
+    background-color: black;
+    box-shadow: 3px 3px 5px black;
+    color: white;
+    transform: translate(0, -1px);
+}
+
+.container-list{
+    float: left;
+    padding: 30px;
+    width: 619px;
+    height: 340px;
+    background-color: rgba(6, 74, 119, 0.514);
+    margin-top: 40px;
+    vertical-align: center;
+    margin-top: 100px;
+    text-align: left;
+}
+
+.container-list ul{
+    list-style-position: inside;
+}
+
+.container-list ul li{
+    margin-top: 20px;
+    color: white;
+}
+
+.container-2{ 
+    padding: 40px 2%;
+    background: linear-gradient(#064a77, #06283D);
+    text-align: center;
+    color: #f5f5f5;
+    box-shadow: 0px 0px 20px rgba(0, 0, 1, 1);
+}
+
+.container-2 h2{
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.container-2 p{
+    width: 100%;
+    max-width: 668px;
+    margin-top: 15px;
+    display: inline-block;
+    text-align: justify;
+}
+
+.arrow{
+    position: relative;
+    top: 60px;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/arrow.png");
+    background-size: 100%;
+}
+
+.section-1{
+    padding: 60px 2%;
+}
+
+.section-1 h2{
+    text-align: center;
+    color: #06283D;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+#vantagens-titulo{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 5px 5px 5px rgba(150, 150, 150, 0.3);
+}
+
+.container-section{
+    margin-top: 40px;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.container-single{
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+}
+
+.container-single p{
+    padding: 15px 25px;
+    text-align: justify;
+}
+
+.container-single img{
+    width: 25%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer{
+    border-top: 2px solid #064a77;
+    padding: 15px 0;
+    text-align: center;
+    color: #06283D;
+    box-shadow: 0px 1px 5px #064a77;    
+}
+
+.footer p{
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 1100px) {
+    .header{
+        height: auto;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+        
+    }
+    .header img{
+        margin: 0;
+    }
+
+    .container-banner{
+        height: auto;
+        padding: 40px 2%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form{
+        max-width: 400px;
+        display: inline-block;
+        margin-top: 30px;
+        float: none;
+        top: 0;
+        width: 90%;
+        height: 100%;
+
+    }
+
+    .container-list{
+        float: none;
+        display: inline-block;
+        margin-top: 0;
+        width: 90%;
+        max-width: 700px;
+        height: auto;
+        padding: 30px;
+    }
+
+    .input-container input[type=text]{
+        width: 100%;
+    }
+
+    .container-2 p{
+        max-width: 400px;
+    }
+
+    .container-single{
+        float: none;
+        display: inline-block;
+        width: 100%;
+        padding: 30px 0;
+        max-width: 600px;
+        
+    }
+}
+
+@media screen and (max-width:500px){
+    .container-2 p{
+        max-width: 300px;
+    }
+    
+    #vantagens-titulo{
+        font-size: 25px;
+    }
+    
+    .footer p{
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    .container-section{
+        padding: 30px 0;
+        margin-top: 0;
+    }
+
+    .container-section p{
+        text-align: justify;
+    }
+
+    .container-section h2{
+        padding: 0 30px;
+    }
+}
